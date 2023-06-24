@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body style="background-color: papayawhip;">
     <h1>Welcome to page 2</h1>
     <a href="mailto:nuslashaheen22@gmail.com" target="_blank" title="Email me"> Send mail </a>
     <a href="https://en.wikipedia.org/wiki/Shrek">
     <img src="Shrek.png" height="300" alt="This is a picture of shrek" title="Shrek is shrexy"> </a>
-    <audio controls autoplay loop src="New Moon - Bad Snacks.mp3"> </audio>
-    <video controls autoplay loop src="https://storage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" width="device-width"></video>
+    <audio controls   loop src="New Moon - Bad Snacks.mp3"> </audio>
+    <video controls  loop src="https://storage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" width="device-width"></video>
     <br>
     <hr>
     <br>
@@ -24,7 +24,99 @@
       <sup>superscript</sup> Doloremque dolore
       <ins>inserted</ins> expedita deleniti
       <del>deleted</del> quas distinctio 
-      <mark>marked</mark>laborum tempora veniam velit numquam provident non nesciunt, deserunt dolor ipsam illo assumenda, culpa quam beatae.</p>
+      <mark>marked</mark>laborum<span style="font-size: large;">tempora veniam velit numquam provident non nesciunt, </span> deserunt dolor ipsam illo assumenda, culpa quam beatae.</p>
+    <div style="background-color: aquamarine;">
+      <ul><!--unordered list-->Unordered list
+        <li>Apple</li>
+        <li>orange</li>
+        <li>Watermelon</li>
+        <li>Pineapple</li>
+        <li>Pear</li>
+         <ul>
+            <li>Pear pie</li>
+            <li>Poached pear</li>
+         </ul>
+    </ul>
+    <ol type="i"> Ordered list
+        <li>Wake up</li>
+        <li>brush</li>
+        <li>eat breakfast</li>
+        <li>go to school</li>
+    </ol>
+    <dl>'
+        <dt>HTML</dt>
+        <dd>Hyper text markup language</dd>
+        <dt>WWW</dt>
+        <dd>World wide web</dd>
+    </dl>
+    </div>
+    <br>
+    <br>
+
+
+    <!--Table-->
+    <table bgcolor="purple">
+        <tr bgcolor="blue">
+            <th width="100">Sunday</th>
+            <th width="100">Monday</th>
+            <th width="100">Tuesday</th>
+            <th width="100">Wednesday</th>
+        </tr>
+        <tr bgcolor="pink">
+            <td>Closed</td>
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>9-5</td>
+        </tr>
+    </table>
+
+    <!--Iframe is used to embed another website in the website for example advertisements-->
+    <iframe src="https://www.bing.com" width="700" height="750" frameborder="0"></iframe>
+    <br>
+     
+    <button style="background-color: coral;color: beige; border-radius: 10px;" onclick="doSomething()"> Click Me </button>
     
+     <p id="test"> Hello</p>
+     <script>
+        function doSomething(){
+            document.getElementById("test").innerHTML="Goodbye!";
+        }
+     </script>
+     <form action="action_page.php" method="post">
+        <div>
+            <label for="fname"> First name: </label>
+            <input type="text" name="fname" id="fname" placeholder="Spongebob">
+        </div>
+        <br>
+        <div>
+            <label for="lname"> Last name: </label>
+            <input type="text" name="lname" id="lname" placeholder="Squarepants">
+        </div>
+        <br>
+        <div>
+            <label for="gender">Gender: </label>
+            <label for="male">Male: </label>
+            <input type="checkbox" name="male" id="male">
+            <label for="female">Female: </label>
+            <input type="checkbox" name="female" id="female">
+        </div>
+        <br>
+        <div>
+            <label for="preference"> Preference</label>
+            <select name="coffee" id="preference">
+                <option> Mocha</option>
+                <option value="latte"> latte</option>
+                <option value="espresso"> Espresso </option>
+            </select>
+        </div>
+        <br>
+        <br>
+        <div>
+            <input type="reset" value="reset">
+            <input type="submit" value="submit">
+        </div>
+        
+       
+     </form>
 </body>
 </html>
